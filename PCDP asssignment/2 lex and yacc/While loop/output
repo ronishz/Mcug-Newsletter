@@ -1,0 +1,19 @@
+student@B4L0106:~$ flex wh.l
+wh.l:11: warning, rule cannot be matched
+student@B4L0106:~$ byacc -d wh.y
+student@B4L0106:~$ g++ -g lex.yy.c y.tab.c -ll
+y.tab.c: In function ‘int yyparse()’:
+y.tab.c:321:27: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+y.tab.c:450:34: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+student@B4L0106:~$ ./a.out
+while(a<b) do a=b
+  
+
+Validstudent@B4L0106:~$ ./a.out
+while(a>b) do c=d
+  
+
+Validstudent@B4L0106:~$ ./a.out
+while(a==b) do c=d
+Sorry.
+

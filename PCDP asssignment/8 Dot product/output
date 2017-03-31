@@ -1,0 +1,23 @@
+/home/student/prog1.cu(29): warning: non-POD class type passed through ellipsis
+
+student@B4L0106:~/Desktop$ ./a.out
+
+ Launching kernel :- 2:8:18:32:50:72:98:128:162:200:
+ Thread ID : 0 
+ Thread ID : 1 
+ Thread ID : 2 
+ Thread ID : 3 
+ Thread ID : 4 
+ Thread ID : 5 
+ Thread ID : 6 
+ Thread ID : 7 
+ Thread ID : 8 
+ Thread ID : 9 
+
+ Block Dimensional is : 10 
+
+ Block ID : 0 
+ 
+ Sum : 770
+ Dot Product is : 770 
+

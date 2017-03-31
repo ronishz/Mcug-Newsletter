@@ -1,0 +1,31 @@
+===== STEPS =====
+
+>cd Desktop
+>gedit ~/.profile
+export PATH="$PATH:/USR/local/cuda-6.5/bin"
+>source ~/.profile
+>nvcc
+>which nvcc
+
+======= OUTPUT ========
+
+student@B4L0106:~/Desktop$ nvcc sort.cu
+student@B4L0106:~/Desktop$ ./a.out
+
+ Enter  10 numbers to sort : 
+5
+9
+10
+2
+4
+7
+6
+3
+1
+8
+
+ Unsorted array is : 
+5 9 10 2 4 7 6 3 1 8 
+ 
+ Sorted array is : 
+1 2 3 4 5 6 7 8 9 10 
