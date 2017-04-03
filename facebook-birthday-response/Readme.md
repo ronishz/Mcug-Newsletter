@@ -21,7 +21,7 @@ Configure parameters and run the script:
 - proxy settings: proxy settings if you are behind a proxy server
 
 
-- Source Code: github.com/ronishz/Mcug-Newsletter/facebook-birthday-response
+- Source Code: github.com/ronishz/Mcug-Newsletter/tree/master/facebook-birthday-response
 
 
 
