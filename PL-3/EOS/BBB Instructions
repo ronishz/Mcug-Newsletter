@@ -1,0 +1,9 @@
+sudo minicom -s
+serial port setup
+Serial Device : /dev/ttyACM0  //if it is not then change by pressing A
+Save setup as dfl
+exit
+username:debian
+password:temppwd
+su
+

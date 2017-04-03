@@ -1,0 +1,15 @@
+*****SERVER OUTPUT*********
+
+root@B4L0106:/home/student# gcc -o server server.c
+root@B4L0106:/home/student# ./server 
+Enter a 2 digit number:22
+root@B4L0106:/home/student# 
+
+
+********CLIENT OUTPUT********
+
+root@B4L0106:/home/student# gcc -o client client.c
+root@B4L0106:/home/student# ./client 
+2 digit number: 22
+Multiplication is: 0484
+root@B4L0106:/home/student#

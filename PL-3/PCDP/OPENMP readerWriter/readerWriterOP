@@ -1,0 +1,22 @@
+shubham@shubham:~$ gcc -fopenmp -o readerWriter readerWriter.c 
+shubham@shubham:~$ ./readerWriter 
+
+Enter number of readers: 3
+Enter number of writers: 2
+
+Executing in parallel region.....
+Executing in parallel region.....
+Reader 1 started
+Executing in parallel region.....
+Reader 1 with thread id 1 is reading shared variable 100
+Writer 1 started
+Reader 0 started
+Reader 2 started
+Executing in parallel region.....
+Executing in parallel region.....
+Writer 1 with ThreadId 1 has updated the shared variable to 200
+Reader 0 with thread id 0 is reading shared variable 200
+Writer 0 started
+Writer 0 with ThreadId 0 has updated the shared variable to 300
+Reader 2 with thread id 2 is reading shared variable 300
+shubham@shubham:~$

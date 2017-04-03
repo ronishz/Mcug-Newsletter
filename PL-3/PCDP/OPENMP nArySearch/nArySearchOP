@@ -1,0 +1,16 @@
+shubham@shubham:~$ g++ -fopenmp -o nArySearch nArySearch.cpp 
+shubham@shubham:~$ ./nArySearch 
+
+Enter the Number of Elements: 10
+
+Enter the Elements: 2  5  7  10  14  18  24  29  31  39
+
+Input Data is: 2  5  7  10  14  18  24  29  31  39  
+
+Enter the Number of elements you want to search: 2
+
+Enter the elements to be searched: 14 29
+
+Key = 14 Found at Position = 5
+Key = 29 Found at Position = 8
+shubham@shubham:~$

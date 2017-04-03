@@ -1,0 +1,56 @@
+student@B4L0106:~$ nvcc -o MatrixMul MatrixMul.cu 
+student@B4L0106:~$ ./MatrixMul 
+Matrix Multiplcation:-->
+Matrix size: 4 x 4
+Matrix 1:
+3.00 3.00 3.00 3.00 
+3.00 3.00 3.00 3.00 
+3.00 3.00 3.00 3.00 
+3.00 3.00 3.00 3.00 
+
+Matrix 2:
+2.00 2.00 2.00 2.00 
+2.00 2.00 2.00 2.00 
+2.00 2.00 2.00 2.00 
+2.00 2.00 2.00 2.00 
+
+ Kernel Launch with Gird of size (2x2) and Block of size (2x2)
+
+ Block[0][0] : Thread[0][0] : Product = 24.00
+
+ Block[0][0] : Thread[1][0] : Product = 24.00
+
+ Block[0][0] : Thread[0][1] : Product = 24.00
+
+ Block[0][0] : Thread[1][1] : Product = 24.00
+
+ Block[0][1] : Thread[0][0] : Product = 24.00
+
+ Block[0][1] : Thread[1][0] : Product = 24.00
+
+ Block[0][1] : Thread[0][1] : Product = 24.00
+
+ Block[0][1] : Thread[1][1] : Product = 24.00
+
+ Block[1][1] : Thread[0][0] : Product = 24.00
+
+ Block[1][1] : Thread[1][0] : Product = 24.00
+
+ Block[1][1] : Thread[0][1] : Product = 24.00
+
+ Block[1][1] : Thread[1][1] : Product = 24.00
+
+ Block[1][0] : Thread[0][0] : Product = 24.00
+
+ Block[1][0] : Thread[1][0] : Product = 24.00
+
+ Block[1][0] : Thread[0][1] : Product = 24.00
+
+ Block[1][0] : Thread[1][1] : Product = 24.00
+
+The Product of Matrix A and B is:
+24.00 24.00 24.00 24.00 
+24.00 24.00 24.00 24.00 
+24.00 24.00 24.00 24.00 
+24.00 24.00 24.00 24.00 
+student@B4L0106:~$ 

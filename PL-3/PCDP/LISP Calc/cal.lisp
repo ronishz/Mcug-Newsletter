@@ -1,0 +1,70 @@
+(defvar a)
+(defvar b)
+(defvar c)
+(defvar d)
+
+(write-line " Enter two numbers in binary format with prefix #b : ")
+	
+	(setf a(read))
+	(setf b(read))
+
+	(sb-thread:make-thread(lambda()(progn(sleep 0)
+				(setf c(+ a b))
+				(print "Addition in binary: ")
+				(format t " ~b" c )
+				(print "Addition in decimal: ")
+				(format t " ~d" c))))
+
+	(sb-thread:make-thread(lambda()(progn(sleep 0)
+				(setf c(- a b))
+				(print "Subtraction in binary: ")
+				(format t " ~b" c )
+				(print "Subtraction in decimal: ")
+				(format t " ~d" c))))
+
+ 	(sb-thread:make-thread(lambda()(progn(sleep 0)
+				(setf c(* a b))
+				(print "Multiplication in binary: ")
+				(format t " ~b" c )
+				(print "Multiplication in decimal: ")
+				(format t " ~d" c))))
+	
+	(sb-thread:make-thread(lambda()(progn(sleep 0)
+				(setf c(* a a))
+				(print "Square of 1st Number in binary: ")
+				(format t " ~b" c )
+				(print "Square of 1st Number in decimal: ")
+				(format t " ~d" c))))
+
+	(sb-thread:make-thread(lambda()(progn(sleep 0)
+				(setf c(* b b b))
+				(print "Cube of 2nd Number in binary: ")
+				(format t " ~b" c)
+				(print "Cube of 2nd Number in decimal: ")
+				(format t " ~d" c))))	
+
+	(sb-thread:make-thread(lambda()(progn(sleep 0)
+				(setf c(sin a))
+				(print "sine Of 1st Number: ")
+				(format t " ~d" c))))
+
+	(sb-thread:make-thread(lambda()(progn(sleep 0)
+				(setf c(tan a))
+				(print "tangent Of 1st Number: ")
+				(format t " ~d" c))))
+
+	(sb-thread:make-thread(lambda()(progn(sleep 0)
+				(setf c(cos a))
+				(print "cosine Of 1st Number: ")
+				(format t " ~d" c))))
+
+	(sb-thread:make-thread(lambda()(progn(sleep 0)
+				(setf c(min a b))
+				(print "Minimum Number: ")
+				(format t " ~d" c))))
+
+	(sb-thread:make-thread(lambda()(progn(sleep 0)
+				(setf c(max a b))
+				(print "Maximum Number: ")
+				(format t " ~d" c))))
+				
