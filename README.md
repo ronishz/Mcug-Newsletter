@@ -1,3 +1,3 @@
 # Mcug-Newsletter
-# Edition - March'17
-# Facebook Graph Api
+## Edition - March'17
+## Facebook Graph Api
